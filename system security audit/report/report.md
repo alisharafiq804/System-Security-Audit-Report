@@ -41,7 +41,7 @@ The audit was performed manually using the built-in **Windows Security** app and
 
 The Windows Security home screen summarizes all protection areas. At the time of the audit, three areas required action: Virus & threat protection, Account protection, and App & browser control.
 
-![Windows Security overview](01-security-overview.png)
+![Windows Security overview](Screenshot%202026-09-13%20225047%20s.png%20s.png)
 
 ---
 
@@ -49,9 +49,9 @@ The Windows Security home screen summarizes all protection areas. At the time of
 
 A quick scan was run and completed with **0 threats found** (37,705 files scanned in ~7 minutes 24 seconds). Security intelligence (virus definitions) was up to date as of 9/13/2026.
 
-![Virus scan in progress](02-virus-threat-scan.png)
+![Virus scan in progress](Screenshot%202026-09-13%20230630sss.png)
 
-![Virus & threat protection settings](03-virus-threat-settings.png)
+![Virus & threat protection settings](Screenshot%202026-09-13%20225629.pngs.png)
 
 **Finding:** No active infections detected. Ransomware protection under this section prompts for OneDrive setup, which has not been configured (see §3.7).
 
@@ -63,7 +63,7 @@ The device uses a **local Dell account**, not signed in to a Microsoft account. 
 - **Windows Hello** (biometric/PIN sign-in) is **not set up**.
 - **Dynamic lock** is **not set up**.
 
-![Account protection](04-account-protection.png)
+![Account protection](Screenshot%202026-09-13%20230406.pngssss.png)
 
 **Risk:** The account currently relies on whatever basic local sign-in method is configured, without hardware-backed biometric or PIN authentication, and without dynamic lock to automatically secure the session when the user steps away.
 
@@ -76,7 +76,7 @@ All three firewall profiles are **enabled**:
 - Private network — Firewall ON
 - Public network (active profile) — Firewall ON
 
-![Firewall & network protection](05-firewall-network.png)
+![Firewall & network protection](Screenshot%202026-09-13%20230512ss.png)
 
 **Finding:** No action needed. The firewall is correctly active on the currently-connected (public) network profile.
 
@@ -88,7 +88,7 @@ All three firewall profiles are **enabled**:
 
 Exploit protection remains on default, Microsoft-recommended settings.
 
-![App & browser control](06-app-browser-control.png)
+![App & browser control](Screenshot%202026-09-13%20231134sss.png)
 
 **Risk:** Without PUA blocking, the device is more exposed to adware, bundled unwanted software, and low-grade malicious downloads.
 
@@ -99,7 +99,7 @@ Exploit protection remains on default, Microsoft-recommended settings.
 - **Security processor (TPM)** is present and providing additional encryption support.
 - **Standard hardware security is not supported** on this device.
 
-![Device security](07-device-security.png)
+![Device security](Screenshot%202026-09-13%20231313.ssspng.png)
 
 **Finding:** No user action available here — this is a hardware capability limitation rather than a misconfiguration. It does mean the device cannot benefit from certain modern hardware-backed protections (e.g., full Windows 11 hardware security baseline).
 
@@ -110,7 +110,7 @@ Exploit protection remains on default, Microsoft-recommended settings.
 - **Controlled folder access** is **OFF**.
 - **Ransomware data recovery** via OneDrive is **not set up** (prompted, not dismissed as configured).
 
-![Ransomware protection](09-ransomware-protection.png)
+![Ransomware protection](sss.png)
 
 **Risk:** Protected folders (Documents, Desktop, Pictures, etc.) are not shielded from unauthorized modification by untrusted applications, and there is no cloud-based recovery path configured in the event of a ransomware incident.
 
@@ -124,7 +124,7 @@ All four monitored health areas report **No issues**:
 - Storage capacity
 - Battery life
 
-![Device performance & health](08-device-performance-health.png)
+![Device performance & health](Screenshot%202026-09-13%20231609ss.png)
 
 **Finding:** No action needed. General system health is good.
 
@@ -140,7 +140,7 @@ This is the most significant finding of the audit:
 - The PC **does not meet the minimum system requirements to run Windows 11**.
 - **Extended Security Updates (ESU)** enrollment is available but has not been completed.
 
-![Windows Update — end of support](11-windows-update-eol.png)
+![Windows Update — end of support](ss.png)
 
 **Risk: Critical.** An unpatched, end-of-life operating system is the single largest exposure on this system — it will not receive fixes for newly discovered vulnerabilities, regardless of how well other settings (firewall, antivirus) are configured.
 
@@ -150,7 +150,7 @@ This is the most significant finding of the audit:
 
 The Settings home page shows: **"Windows isn't activated. Activate Windows now."**
 
-![Settings home — activation warning](10-settings-home-activation.png)
+![Settings home — activation warning](security%20ss.png)
 
 **Risk:** An unactivated copy of Windows may not reliably receive updates and indicates a licensing compliance gap that should be resolved.
 
@@ -160,7 +160,7 @@ The Settings home page shows: **"Windows isn't activated. Activate Windows now."
 
 For completeness, the working drive (Local Disk E:) folder structure at the time of the audit is included below for project record-keeping purposes.
 
-![Drive folder structure](12-drive-folder-structure.png)
+![Drive folder structure](Screenshot%202026-09-13%20232431.png)
 
 ---
 
