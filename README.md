@@ -23,7 +23,7 @@ This project documents a point-in-time security review performed using Windows' 
 | Windows Update / OS Support | 🔴 Critical |
 | Windows Activation | 🔴 Critical |
 
-See the full [report](report/report.md) ([PDF version](report.pdf)) for detailed evidence, screenshots, risk ratings, and recommendations.
+See the full [Full Report](system%20security%20audit/report/report.md) ([PDF version](report.pdf)) for detailed evidence, screenshots, risk ratings, and recommendations.
 
 ## 📁 Repository Structure
 
